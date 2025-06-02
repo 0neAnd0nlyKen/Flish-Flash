@@ -3,8 +3,11 @@ package main
 import (
 	"database/sql"
 	"encoding/json"
+	"io"
 	"log"
 	"net/http"
+	"os"
+	"sync"
 
 	_ "github.com/lib/pq"
 )
@@ -14,6 +17,11 @@ type user struct {
 	Name  string `json:"name"`
 	Email string `json:"email"`
 }
+
+var (
+	activeGames = make(map[string]bool) // Tracks running games
+	mutex       = &sync.Mutex{}
+)
 
 func requireAuth(next http.HandlerFunc) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
@@ -57,6 +65,8 @@ func main() {
 	mux.HandleFunc("POST /api/go/login", login(db))
 	mux.HandleFunc("GET /api/go/users", requireAuth(getUsers(db)))
 	mux.HandleFunc("POST /api/go/users", requireAuth(createUser(db)))
+	mux.HandleFunc("/games/", serveGame)
+	mux.HandleFunc("/terminate/", terminateGame)
 	// mux.HandleFunc("GET /api/go/users/{id}", getUser(db))
 	// mux.HandleFunc("PUT /api/go/users/{id}", updateUser(db))
 	// mux.HandleFunc("DELETE /api/go/users/{id}", deleteUser(db))
@@ -65,7 +75,36 @@ func main() {
 	http.ListenAndServe(":8080", mux)
 
 }
+func serveGame(w http.ResponseWriter, r *http.Request) {
+	gameID := r.URL.Path[len("/games/"):]
+	filePath := "./games/" + gameID + ".swf"
 
+	// Track active game (Goroutine-safe)
+	mutex.Lock()
+	activeGames[gameID] = true
+	mutex.Unlock()
+
+	file, err := os.Open(filePath)
+	if err != nil {
+		http.NotFound(w, r)
+		return
+	}
+	defer file.Close()
+
+	w.Header().Set("Content-Type", "application/x-shockwave-flash")
+	io.Copy(w, file)
+}
+
+// Terminate game (simulate cleanup)
+func terminateGame(w http.ResponseWriter, r *http.Request) {
+	gameID := r.URL.Path[len("/terminate/"):]
+
+	mutex.Lock()
+	delete(activeGames, gameID)
+	mutex.Unlock()
+
+	w.WriteHeader(http.StatusOK)
+}
 func login(db *sql.DB) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		var u user
