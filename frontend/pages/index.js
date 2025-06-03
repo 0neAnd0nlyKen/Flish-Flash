@@ -1,62 +1,68 @@
 // pages/index.js
-import { useState, useEffect, useRef } from "react";
-import GamePlayer from "../components/GamePlayer";
+import Head from 'next/head';
+import RuffleLoader from '../components/RuffleLoader';
+import styles from '../styles/Home.module.css';
 
-export default function GameScroller() {
-  const [games, setGames] = useState(["game1", "game2", "game3"]);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const scrollerRef = useRef(null);
-
-  // Preload next 2 games
-  useEffect(() => {
-    const preloadGames = async () => {
-      for (let i = 1; i <= 2; i++) {
-        const nextIndex = currentIndex + i;
-        if (nextIndex < games.length) {
-          await fetch(`http://localhost:8080/games/${games[nextIndex]}`);
-        }
-      }
-    };
-    preloadGames();
-  }, [currentIndex, games]);
-
-  // Handle scroll events
-  useEffect(() => {
-    const handleScroll = (e) => {
-      const { deltaY } = e;
-      if (deltaY > 0 && currentIndex < games.length - 1) {
-        // Scroll down: pause current, terminate if 3+ away
-        setCurrentIndex((prev) => prev + 1);
-        if (currentIndex >= 2) {
-          fetch(`http://localhost:8080/terminate/${games[currentIndex - 2]}`);
-        }
-      } else if (deltaY < 0 && currentIndex > 0) {
-        // Scroll up
-        setCurrentIndex((prev) => prev - 1);
-      }
-    };
-
-    window.addEventListener("wheel", handleScroll);
-    return () => window.removeEventListener("wheel", handleScroll);
-  }, [currentIndex, games]);
+export default function Home() {
+  const games = [
+    {
+      id: 1,
+      title: "Classic Game 1",
+      swfPath: "/games/super-mario-flash-2.swf",
+      thumbnail: "/thumbnails/game1.jpg",
+      width: 800,
+      height: 600
+    },
+    {
+      id: 2,
+      title: "Adventure Game",
+      swfPath: "/games/adventure.swf",
+      thumbnail: "/thumbnails/adventure.jpg",
+      width: 550,
+      height: 400
+    },
+    // Add more games as needed
+  ];
 
   return (
-    <div ref={scrollerRef}>
-      {games.map((gameId, index) => (
-        <div key={gameId} style={{ height: "100vh" }}>
-          {Math.abs(index - currentIndex) <= 2 ? (
-            <GamePlayer
-              gameId={gameId}
-              isPaused={index !== currentIndex}
-              onTerminate={() => {
-                if (Math.abs(index - currentIndex) >= 3) {
-                  fetch(`http://localhost:8080/terminate/${gameId}`);
-                }
-              }}
-            />
-          ) : null}
+    <div className={styles.container}>
+      <Head>
+        <title>Flash Games Archive</title>
+        <meta name="description" content="Play classic Flash games using Ruffle" />
+        {/* Preload Ruffle for better performance */}
+        <link rel="preload" href="/ruffle/ruffle.js" as="script" />
+        <link rel="preload" href="/ruffle/ruffle.wasm" as="fetch" crossOrigin="anonymous" />
+      </Head>
+
+      <RuffleLoader />
+
+      <main className={styles.main}>
+        <h1 className={styles.title}>Classic Flash Games</h1>
+        
+        <p className={styles.description}>
+          Relive your childhood favorites powered by Ruffle
+        </p>
+
+        <div className={styles.grid}>
+          {games.map((game) => (
+            <div key={game.id} className={styles.card}>
+              <h3>{game.title}</h3>
+              <div className={styles.gameContainer}>
+                <embed
+                  src={game.swfPath}
+                  width={game.width}
+                  height={game.height}
+                  type="application/x-shockwave-flash"
+                />
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
+      </main>
+
+      <footer className={styles.footer}>
+        <p>SWF games powered by Ruffle - Flash emulator</p>
+      </footer>
     </div>
   );
 }
