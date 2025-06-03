@@ -41,16 +41,16 @@ func requireAuth(next http.HandlerFunc) http.HandlerFunc {
 }
 
 func main() {
-	db, err := sql.Open("postgres", "user=postgres password=postgres dbname=postgres sslmode=disable")
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer db.Close()
+	// db, err := sql.Open("postgres", "user=postgres password=postgres dbname=postgres sslmode=disable")
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
+	// defer db.Close()
 
-	_, err = db.Exec("CREATE TABLE IF NOT EXISTS users (id SERIAL PRIMARY KEY, name TEXT, email TEXT)")
-	if err != nil {
-		log.Fatal(err)
-	}
+	// _, err = db.Exec("CREATE TABLE IF NOT EXISTS users (id SERIAL PRIMARY KEY, name TEXT, email TEXT)")
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
 
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
@@ -62,9 +62,9 @@ func main() {
 			w.Write([]byte("No Authorization "))
 		}
 	})
-	mux.HandleFunc("POST /api/go/login", login(db))
-	mux.HandleFunc("GET /api/go/users", requireAuth(getUsers(db)))
-	mux.HandleFunc("POST /api/go/users", requireAuth(createUser(db)))
+	// mux.HandleFunc("POST /api/go/login", login(db))
+	// mux.HandleFunc("GET /api/go/users", requireAuth(getUsers(db)))
+	// mux.HandleFunc("POST /api/go/users", requireAuth(createUser(db)))
 	mux.HandleFunc("/games/", serveGame)
 	mux.HandleFunc("/terminate/", terminateGame)
 	// mux.HandleFunc("GET /api/go/users/{id}", getUser(db))
@@ -79,6 +79,8 @@ func serveGame(w http.ResponseWriter, r *http.Request) {
 	gameID := r.URL.Path[len("/games/"):]
 	filePath := "./games/" + gameID + ".swf"
 
+	log.Printf("[serveGame] Requested gameID: %s, filePath: %s, remoteAddr: %s", gameID, filePath, r.RemoteAddr)
+
 	// Track active game (Goroutine-safe)
 	mutex.Lock()
 	activeGames[gameID] = true
@@ -86,6 +88,7 @@ func serveGame(w http.ResponseWriter, r *http.Request) {
 
 	file, err := os.Open(filePath)
 	if err != nil {
+		log.Printf("[serveGame] File not found: %s", filePath)
 		http.NotFound(w, r)
 		return
 	}
@@ -93,6 +96,7 @@ func serveGame(w http.ResponseWriter, r *http.Request) {
 
 	w.Header().Set("Content-Type", "application/x-shockwave-flash")
 	io.Copy(w, file)
+	log.Printf("[serveGame] Served gameID: %s to %s", gameID, r.RemoteAddr)
 }
 
 // Terminate game (simulate cleanup)
@@ -100,9 +104,13 @@ func terminateGame(w http.ResponseWriter, r *http.Request) {
 	gameID := r.URL.Path[len("/terminate/"):]
 
 	mutex.Lock()
-	delete(activeGames, gameID)
+	_, existed := activeGames[gameID]
+	if existed {
+		delete(activeGames, gameID)
+	}
 	mutex.Unlock()
 
+	log.Printf("[terminateGame] Terminated gameID: %s, existed: %v, remoteAddr: %s", gameID, existed, r.RemoteAddr)
 	w.WriteHeader(http.StatusOK)
 }
 func login(db *sql.DB) http.HandlerFunc {
