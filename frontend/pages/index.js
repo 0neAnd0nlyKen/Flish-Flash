@@ -8,7 +8,7 @@ export default function Home() {
     {
       id: 1,
       title: "Classic Game 1",
-      swfPath: "/games/super-mario-flash-2.swf",
+      swfPath: "http://localhost:8080/games/1",
       thumbnail: "/thumbnails/game1.jpg",
       width: 800,
       height: 600
