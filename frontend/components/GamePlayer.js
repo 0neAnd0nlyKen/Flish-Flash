@@ -1,9 +1,7 @@
-
-
 // components/GamePlayer.js
 import { useEffect, useRef } from "react";
 
-export default function GamePlayer({ swfPath, width, height, gameId, onPlayTime }) {
+export default function GamePlayer({ swfPath, width, height, gameId, onPlayTime, onTerminate }) {
   const containerRef = useRef(null);
   const playerRef = useRef(null);
   const playTimeRef = useRef(0); // total play time in ms
@@ -49,6 +47,7 @@ export default function GamePlayer({ swfPath, width, height, gameId, onPlayTime 
             playerRef.current.pause && playerRef.current.pause();
             onPause();
             onPlayTime(gameId, playTimeRef.current);
+            onTerminate()
           }
         }
       },
@@ -57,6 +56,18 @@ export default function GamePlayer({ swfPath, width, height, gameId, onPlayTime 
     if (containerRef.current) observer.observe(containerRef.current);
     return () => observer.disconnect();
   }, []);
+  // useEffect(() => {
+  //   return () => {
+  //     if (onTerminate) {
+  //       // Ensure play time is up to date before terminating
+  //       if (playStartRef.current) {
+  //         playTimeRef.current += Date.now() - playStartRef.current;
+  //         playStartRef.current = null;
+  //       }
+  //       onTerminate(gameId, playTimeRef.current);
+  //     }
+  //   };
+  // }, []);
 
   function onPlay() {
     playStartRef.current = Date.now();
