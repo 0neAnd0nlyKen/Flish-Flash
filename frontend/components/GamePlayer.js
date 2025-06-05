@@ -1,39 +1,73 @@
+
+
 // components/GamePlayer.js
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
-export default function GamePlayer({ gameId, onTerminate }) {
+export default function GamePlayer({ swfPath, width, height }) {
+  const containerRef = useRef(null);
   const playerRef = useRef(null);
-  const [isPaused, setIsPaused] = useState(false);
-
+  const playTimeRef = useRef(0); // total play time in ms
+  const playStartRef = useRef(null); // timestamp when play started
+  onPlay(); // reset play time on each render
+  // Load Ruffle and SWF
   useEffect(() => {
-    // Load Ruffle (Flash emulator)
+    let player;
     const loadRuffle = async () => {
-      const Ruffle = (await import("ruffle-core")).default;
-      const player = Ruffle.newest().createPlayer();
-      playerRef.current = player;
-      document.getElementById(`game-${gameId}`).appendChild(player);
-      await player.load(`http://localhost:8080/games/${gameId}`);
+      if (!window.RufflePlayer) {
+        const script = document.createElement("script");
+        script.src = "/ruffle/ruffle.js";
+        document.body.appendChild(script);
+        await new Promise((res) => (script.onload = res));
+      }
+      const ruffle = window.RufflePlayer?.newest();
+      if (ruffle && containerRef.current) {
+        player = ruffle.createPlayer();
+        player.style.width = `${width}px`;
+        player.style.height = `${height}px`;
+        containerRef.current.appendChild(player);
+        player.load(swfPath);
+        playerRef.current = player;
+      }
     };
-
     loadRuffle();
 
     return () => {
-      // Cleanup when unmounted
       if (playerRef.current) {
         playerRef.current.remove();
       }
     };
-  }, [gameId]);
+  }, [swfPath, width, height]);
 
-  // Pause/resume on visibility change
+  // Pause/resume when not visible/visible
   useEffect(() => {
-    if (!playerRef.current) return;
-    if (isPaused) {
-      playerRef.current.pause();
-    } else {
-      playerRef.current.play();
-    }
-  }, [isPaused]);
+    const observer = new window.IntersectionObserver(
+      ([entry]) => {
+        if (playerRef.current) {
+          if (entry.isIntersecting) {
+            playerRef.current.play && playerRef.current.play();
+          } else {
+            playerRef.current.pause && playerRef.current.pause();
+            onPause();
+          }
+        }
+      },
+      { threshold: 0.1 }
+    );
+    if (containerRef.current) observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, []);
 
-  return <div id={`game-${gameId}`} />;
+  function onPlay() {
+    playStartRef.current = Date.now();
+  }
+
+  function onPause() {
+    if (playStartRef.current) {
+      playTimeRef.current += Date.now() - playStartRef.current;
+      playStartRef.current = null;
+      console.log(`Total play time: ${playTimeRef.current} ms`);
+    }
+  }
+
+  return <div ref={containerRef} style={{ width, height }} />;
 }
