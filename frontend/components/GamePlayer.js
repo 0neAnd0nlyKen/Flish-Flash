@@ -3,7 +3,7 @@
 // components/GamePlayer.js
 import { useEffect, useRef } from "react";
 
-export default function GamePlayer({ swfPath, width, height }) {
+export default function GamePlayer({ swfPath, width, height, gameId, onPlayTime }) {
   const containerRef = useRef(null);
   const playerRef = useRef(null);
   const playTimeRef = useRef(0); // total play time in ms
@@ -48,6 +48,7 @@ export default function GamePlayer({ swfPath, width, height }) {
           } else {
             playerRef.current.pause && playerRef.current.pause();
             onPause();
+            onPlayTime(gameId, playTimeRef.current);
           }
         }
       },

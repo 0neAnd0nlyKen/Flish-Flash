@@ -33,6 +33,12 @@ export default function Home() {
     },
   ];
 
+  // Track play time for each game
+  const handlePlayTime = (gameId, playTimeMs) => {
+    console.log(`Game ${gameId} played for ${playTimeMs} ms`);
+    // Here you could update preferences or send to server
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -61,6 +67,8 @@ export default function Home() {
                   swfPath={game.swfPath}
                   width={game.width}
                   height={game.height}
+                  gameId={game.id}
+                  onPlayTime={handlePlayTime}
                 />
               </div>
             </div>
