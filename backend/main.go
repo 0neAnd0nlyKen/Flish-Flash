@@ -7,6 +7,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"strings"
 	"sync"
 
 	_ "github.com/lib/pq"
@@ -41,16 +42,16 @@ func requireAuth(next http.HandlerFunc) http.HandlerFunc {
 }
 
 func main() {
-	db, err := sql.Open("postgres", "user=postgres password=postgres dbname=postgres sslmode=disable")
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer db.Close()
+	// db, err := sql.Open("postgres", "user=postgres password=postgres dbname=postgres sslmode=disable")
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
+	// defer db.Close()
 
-	_, err = db.Exec("CREATE TABLE IF NOT EXISTS users (id SERIAL PRIMARY KEY, name TEXT, email TEXT)")
-	if err != nil {
-		log.Fatal(err)
-	}
+	// _, err = db.Exec("CREATE TABLE IF NOT EXISTS users (id SERIAL PRIMARY KEY, name TEXT, email TEXT)")
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
 
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
@@ -62,10 +63,10 @@ func main() {
 			w.Write([]byte("No Authorization "))
 		}
 	})
-	mux.HandleFunc("POST /api/go/login", login(db))
-	mux.HandleFunc("GET /api/go/users", requireAuth(getUsers(db)))
-	mux.HandleFunc("POST /api/go/users", requireAuth(createUser(db)))
-	mux.HandleFunc("/games/", serveGame)
+	// mux.HandleFunc("POST /api/go/login", login(db))
+	// mux.HandleFunc("GET /api/go/users", requireAuth(getUsers(db)))
+	// mux.HandleFunc("POST /api/go/users", requireAuth(createUser(db)))
+	mux.HandleFunc("/games/", withCORS(serveGame))
 	mux.HandleFunc("/terminate/", terminateGame)
 	// mux.HandleFunc("GET /api/go/users/{id}", getUser(db))
 	// mux.HandleFunc("PUT /api/go/users/{id}", updateUser(db))
@@ -212,3 +213,20 @@ func createUser(db *sql.DB) http.HandlerFunc {
 // 		w.WriteHeader(http.StatusNoContent)
 // 	}
 // }
+
+func withCORS(next http.HandlerFunc) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		origin := r.Header.Get("Origin")
+		if origin != "" && (strings.HasPrefix(origin, "http://localhost") || strings.HasPrefix(origin, "http://127.0.0.1")) {
+			w.Header().Set("Access-Control-Allow-Origin", origin)
+			w.Header().Set("Vary", "Origin")
+			w.Header().Set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
+			w.Header().Set("Access-Control-Allow-Headers", "Content-Type, Authorization")
+		}
+		if r.Method == "OPTIONS" {
+			w.WriteHeader(http.StatusNoContent)
+			return
+		}
+		next(w, r)
+	}
+}
