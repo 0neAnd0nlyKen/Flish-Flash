@@ -10,6 +10,7 @@ import GamePlayer from './GamePlayer.js';
 import { getGames } from "../actions/GetGames";
 import { GameDetails } from "../types/GameDetails";
 import { log } from "console";
+import GamePlayerContainer from "./GamePlayerContainer";
 // import GameCarouselItems from "./GameCarouselItems"
 // import { getGames } from "../actions/GetGames"
 // import { GamePreferences } from "../types/GamePreferences"
@@ -37,7 +38,7 @@ return (
         <CarouselContent>
             {initialGames.map((game: GameDetails, index: number) => (
               <CarouselItem key={index}>
-                <GamePlayer swfPath={game.file} />
+                <GamePlayerContainer game={game} />
               </CarouselItem>
             ))}
         </CarouselContent>
