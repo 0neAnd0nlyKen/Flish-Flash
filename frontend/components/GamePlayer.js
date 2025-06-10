@@ -1,7 +1,7 @@
 // components/GamePlayer.js
 import { useEffect, useRef } from "react";
 
-export default function GamePlayer({ swfPath, width=800, height=600, gameId=1 }) {
+export default function GamePlayer({ swfPath, width=800, height=600}) {
   const containerRef = useRef(null);
   const playerRef = useRef(null);
   const playTimeRef = useRef(0); // total play time in ms
@@ -12,7 +12,8 @@ export default function GamePlayer({ swfPath, width=800, height=600, gameId=1 })
     let player;
     const loadRuffle = async () => {
       if (!window.RufflePlayer) {
-        const ruffle = require('@ruffle-rs/ruffle')
+        // const ruffle = require('@ruffle-rs/ruffle')
+        console.log("Loading Ruffle Player...");
         const script = document.createElement("script");
         script.src = "/ruffle/ruffle.js";
         document.body.appendChild(script);

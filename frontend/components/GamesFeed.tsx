@@ -31,17 +31,16 @@ export default function GameFeed() {
     console.log("GAME FEED")
 //   const initialGames = await getGames(preferences);
 
-  return (
+return (
     <div className="game-feed">
       <Carousel>
         <CarouselContent>
-            <CarouselItem key={1}>
-                <GamePlayer swfPath={initialGames[0].file} />
-            </CarouselItem>
-
+            {initialGames.map((game: GameDetails, index: number) => (
+              <CarouselItem key={index}>
+                <GamePlayer swfPath={game.file} />
+              </CarouselItem>
+            ))}
         </CarouselContent>
-        {/* <GameCarouselItems initialGames={initialGames}/> */}
       </Carousel>
     </div>
   )
-}

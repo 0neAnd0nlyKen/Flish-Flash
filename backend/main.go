@@ -67,6 +67,7 @@ func main() {
 	// mux.HandleFunc("GET /api/go/users", requireAuth(getUsers(db)))
 	// mux.HandleFunc("POST /api/go/users", requireAuth(createUser(db)))
 	mux.HandleFunc("GET /games/", withCORS(serveGame))
+	mux.HandleFunc("POST /games/", withCORS(serveGame1))
 	mux.HandleFunc("/terminate/", terminateGame)
 	// mux.HandleFunc("GET /api/go/users/{id}", getUser(db))
 	// mux.HandleFunc("PUT /api/go/users/{id}", updateUser(db))
@@ -77,6 +78,73 @@ func main() {
 
 }
 func serveGame(w http.ResponseWriter, r *http.Request) {
+	gameID := r.URL.Path[len("/games/"):]
+	filePath := "./games/" + gameID + ".swf"
+
+	// Example: hardcoded metadata for demonstration
+	// gameMeta := map[string]struct {
+	// 	Genres []string
+	// 	Title  string
+	// }{
+	// 	"1": {Genres: []string{"platformer", "action"}, Title: "Classic Game 1"},
+	// 	"2": {Genres: []string{"puzzle"}, Title: "Classic Game 2"},
+	// 	"3": {Genres: []string{"strategy", "simulation"}, Title: "Classic Game 3"},
+	// }
+
+	// meta, ok := gameMeta[gameID]
+	// if !ok {
+	// 	http.NotFound(w, r)
+	// 	return
+	// }
+
+	file, err := os.ReadFile(filePath)
+	if err != nil {
+		http.NotFound(w, r)
+		return
+	}
+
+	// Encode SWF as base64
+	encoded := make([]byte, base64.StdEncoding.EncodedLen(len(file)))
+	base64.StdEncoding.Encode(encoded, file)
+	var resp []any
+	for range 3 {
+		game := struct {
+			File string `json:"file"`
+			// Genres []string `json:"genres"`
+			// ID     string   `json:"id"`
+			// Title  string   `json:"title"`
+		}{
+			File: string(encoded),
+			// Genres: meta.Genres,
+			// ID:     gameID,
+			// Title:  meta.Title,
+		}
+		resp = append(resp, game)
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(resp)
+	// io.Copy(w, strings.NewReader(string(encoded)))
+
+	// gameID := r.URL.Path[len("/games/"):]
+	// filePath := "./games/" + gameID + ".swf"
+
+	// // Track active game (Goroutine-safe)
+	// mutex.Lock()
+	// activeGames[gameID] = true
+	// mutex.Unlock()
+
+	// file, err := os.Open(filePath)
+	// if err != nil {
+	// 	http.NotFound(w, r)
+	// 	return
+	// }
+	// defer file.Close()
+
+	// w.Header().Set("Content-Type", "application/x-shockwave-flash")
+	// io.Copy(w, file)
+}
+func serveGame1(w http.ResponseWriter, r *http.Request) {
 	gameID := r.URL.Path[len("/games/"):]
 	filePath := "./games/" + gameID + ".swf"
 
