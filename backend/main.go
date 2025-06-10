@@ -19,6 +19,11 @@ type user struct {
 	Email string `json:"email"`
 }
 
+type preferences struct {
+	Genre    []string `json:"genre"`
+	Playtime []int    `json:"playtime"`
+}
+
 var (
 	activeGames = make(map[string]bool) // Tracks running games
 	mutex       = &sync.Mutex{}

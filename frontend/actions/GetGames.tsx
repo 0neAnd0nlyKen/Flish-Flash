@@ -1,14 +1,17 @@
 'use server'
+import { json } from "stream/consumers";
 import { GameDetails } from "../types/GameDetails"
+import { Preferences } from "../types/Preferences";
 export async function getGames(): Promise<GameDetails[]> {
-    return fetch('http://localhost:8080/games/1'
-        // ,{
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //     },
-        //     body: JSON.stringify({ amount }),
-        // }
+    const pref: Preferences = {
+        genre: ["action", "puzzle"],
+        playtime: [2, 3]
+    };
+    console.log(JSON.stringify(pref));    
+    return fetch('http://localhost:8080/games/1', {
+            method: 'POST',
+            body: JSON.stringify(pref),
+        }
     )
     .then((response) => {
         if (!response.ok) {
