@@ -1,3 +1,5 @@
+'use server'
+
 import { GameDetails } from "../types/GameDetails";
 import GamePlayer from "./GamePlayer";
 

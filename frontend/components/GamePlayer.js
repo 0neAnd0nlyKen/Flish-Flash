@@ -1,7 +1,18 @@
+'use client';
 // components/GamePlayer.js
-import { useEffect, useRef } from "react";
+import { use, useEffect, useRef } from "react";
+import { useContext } from "react";
+import {PreferencesContext} from "../context/PreferencesContext";
 
 export default function GamePlayer({ swfPath, width=800, height=600}) {
+  let {preferences} = useContext(PreferencesContext);
+  // console.log("GamePlayerContainer preferences", preferences);
+  useEffect(() => {
+    if (preferences) {
+      console.log("GamePlayerContainer preferences", preferences);
+    }
+  }, [preferences]);
+  
   const containerRef = useRef(null);
   const playerRef = useRef(null);
   const playTimeRef = useRef(0); // total play time in ms
