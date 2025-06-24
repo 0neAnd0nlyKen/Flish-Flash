@@ -32,16 +32,17 @@ export default function GameFeed() {
     console.log("GAME FEED")
 //   const initialGames = await getGames(preferences);
 
-return (
-    <div className="game-feed">
-      <Carousel>
-        <CarouselContent>
-            {initialGames.map((game: GameDetails, index: number) => (
-              <CarouselItem key={index}>
-                <GamePlayerContainer game={game} />
-              </CarouselItem>
-            ))}
-        </CarouselContent>
-      </Carousel>
-    </div>
-  )
+  return (
+      <div className="game-feed">
+        <Carousel>
+          <CarouselContent>
+              {initialGames.map((game: GameDetails, index: number) => (
+                <CarouselItem key={index}>
+                  <GamePlayerContainer game={game} />
+                </CarouselItem>
+              ))}
+          </CarouselContent>
+        </Carousel>
+      </div>
+  );
+}

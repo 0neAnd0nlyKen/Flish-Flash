@@ -1,0 +1,68 @@
+package main
+
+import (
+	"encoding/base64"
+	"encoding/json"
+	"log"
+	"net/http"
+	"os"
+	"strings"
+)
+
+func main() {
+	mux := http.NewServeMux()
+	mux.HandleFunc("/", withCORS(serveGame))
+
+	log.Println("Server started on :8080")
+	http.ListenAndServe(":8080", mux)
+
+}
+func serveGame(w http.ResponseWriter, r *http.Request) {
+	gameID := r.URL.Path[len("/games/"):]
+	filePath := "./games/" + gameID + ".swf"
+
+	file, err := os.ReadFile(filePath)
+	if err != nil {
+		http.NotFound(w, r)
+		return
+	}
+
+	// Encode SWF as base64
+	encoded := make([]byte, base64.StdEncoding.EncodedLen(len(file)))
+	base64.StdEncoding.Encode(encoded, file)
+	var resp []any
+	for range 3 {
+		game := struct {
+			File string `json:"file"`
+			// Genres []string `json:"genres"`
+			// ID     string   `json:"id"`
+			// Title  string   `json:"title"`
+		}{
+			File: string(encoded),
+			// Genres: meta.Genres,
+			// ID:     gameID,
+			// Title:  meta.Title,
+		}
+		resp = append(resp, game)
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(resp)
+}
+
+func withCORS(next http.HandlerFunc) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		origin := r.Header.Get("Origin")
+		if origin != "" && (strings.HasPrefix(origin, "http://localhost") || strings.HasPrefix(origin, "http://127.0.0.1")) {
+			w.Header().Set("Access-Control-Allow-Origin", origin)
+			w.Header().Set("Vary", "Origin")
+			w.Header().Set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
+			w.Header().Set("Access-Control-Allow-Headers", "Content-Type, Authorization")
+		}
+		if r.Method == "OPTIONS" {
+			w.WriteHeader(http.StatusNoContent)
+			return
+		}
+		next(w, r)
+	}
+}
