@@ -133,3 +133,29 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* styles/globals.css or a module */
+.game-feed,
+.carousel,
+.carousel-content {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel-content {
+  display: flex;
+  flex-direction: row;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  height: 100vh;
+}
+
+.carousel-item {
+  flex: 0 0 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

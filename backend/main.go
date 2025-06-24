@@ -4,6 +4,7 @@ import (
 	"database/sql"
 	"encoding/base64"
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -150,6 +151,14 @@ func serveGame(w http.ResponseWriter, r *http.Request) {
 	// io.Copy(w, file)
 }
 func serveGame1(w http.ResponseWriter, r *http.Request) {
+	//print request body
+	var p preferences
+	err := json.NewDecoder(r.Body).Decode(&p)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+	fmt.Print(p.Genre, p.Playtime)
 	gameID := r.URL.Path[len("/games/"):]
 	filePath := "./games/" + gameID + ".swf"
 
@@ -178,22 +187,24 @@ func serveGame1(w http.ResponseWriter, r *http.Request) {
 	// Encode SWF as base64
 	encoded := make([]byte, base64.StdEncoding.EncodedLen(len(file)))
 	base64.StdEncoding.Encode(encoded, file)
-
-	resp := struct {
-		File string `json:"file"`
-		// Genres []string `json:"genres"`
-		// ID     string   `json:"id"`
-		// Title  string   `json:"title"`
-	}{
-		File: string(encoded),
-		// Genres: meta.Genres,
-		// ID:     gameID,
-		// Title:  meta.Title,
+	var resp []any
+	for range 3 {
+		game := struct {
+			File string `json:"file"`
+			// Genres []string `json:"genres"`
+			// ID     string   `json:"id"`
+			// Title  string   `json:"title"`
+		}{
+			File: string(encoded),
+			// Genres: meta.Genres,
+			// ID:     gameID,
+			// Title:  meta.Title,
+		}
+		resp = append(resp, game)
 	}
 
 	w.Header().Set("Content-Type", "application/json")
-	// json.NewEncoder(w).Encode(resp)
-	json.NewEncoder(w).Encode([]interface{}{resp})
+	json.NewEncoder(w).Encode(resp)
 	// io.Copy(w, strings.NewReader(string(encoded)))
 
 	// gameID := r.URL.Path[len("/games/"):]
