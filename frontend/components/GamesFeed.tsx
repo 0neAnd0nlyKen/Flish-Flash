@@ -6,7 +6,10 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel"
 
+import GamePlayer from './GamePlayer.js';
+import { getGames } from "../actions/GetGames";
 import { GameDetails } from "../types/GameDetails";
+import { log } from "console";
 import GamePlayerContainer from "./GamePlayerContainer";
 // import GameCarouselItems from "./GameCarouselItems"
 // import { getGames } from "../actions/GetGames"

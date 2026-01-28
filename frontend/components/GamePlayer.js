@@ -1,6 +1,6 @@
 'use client';
 // components/GamePlayer.js
-import { useEffect, useRef } from "react";
+import { use, useEffect, useRef } from "react";
 import { useContext } from "react";
 import {PreferencesContext} from "../context/PreferencesContext";
 
@@ -17,7 +17,7 @@ export default function GamePlayer({ swfPath, width=800, height=600}) {
   const playerRef = useRef(null);
   const playTimeRef = useRef(0); // total play time in ms
   const playStartRef = useRef(null); // timestamp when play started
-  // onPlay(); // reset play time on each render
+  onPlay(); // reset play time on each render
   // Load Ruffle and SWF
   useEffect(() => {
     let player;
@@ -58,7 +58,6 @@ export default function GamePlayer({ swfPath, width=800, height=600}) {
             playerRef.current.play && playerRef.current.play();
           } else {
             playerRef.current.pause && playerRef.current.pause();
-            // onPause();
             // onPlayTime(gameId, playTimeRef.current);
             // onTerminate()
           }
@@ -69,30 +68,6 @@ export default function GamePlayer({ swfPath, width=800, height=600}) {
     if (containerRef.current) observer.observe(containerRef.current);
     return () => observer.disconnect();
   }, []);
-  // useEffect(() => {
-  //   return () => {
-  //     if (onTerminate) {
-  //       // Ensure play time is up to date before terminating
-  //       if (playStartRef.current) {
-  //         playTimeRef.current += Date.now() - playStartRef.current;
-  //         playStartRef.current = null;
-  //       }
-  //       onTerminate(gameId, playTimeRef.current);
-  //     }
-  //   };
-  // }, []);
-
-  function onPlay() {
-    playStartRef.current = Date.now();
-  }
-
-  function onPause() {
-    if (playStartRef.current) {
-      playTimeRef.current += Date.now() - playStartRef.current;
-      playStartRef.current = null;
-      console.log(`Total play time: ${playTimeRef.current} ms`);
-    }
-  }
 
   return <div ref={containerRef} style={{ width, height }} />;
 }
