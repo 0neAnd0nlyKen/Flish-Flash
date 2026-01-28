@@ -43,6 +43,13 @@ func main() {
 		logger: logger,
 	}
 
+	// Load games metadata
+	err = LoadGamesMetadata()
+	if err != nil {
+		logger.Error("failed to load games metadata", "error", err.Error())
+		os.Exit(1)
+	}
+
 	// create the server
 	srv := &http.Server{
 		Addr:         fmt.Sprintf(":%d", cfg.port),
