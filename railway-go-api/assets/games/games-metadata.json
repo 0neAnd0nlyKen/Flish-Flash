@@ -21,7 +21,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20231118095313[\/date][comment]checked for malware[\/comment]",
             "publisher":"ArcadeTown"
         },
-        "swf_file_path":"flash_games_download_updated\/000258-zed-game\/000258_zed__game.swf"
+        "swf_file_path":"games\/000258-zed-game\/000258_zed__game.swf"
     },
     "0057-balao-adventure":{
         "metadata":{
@@ -56,7 +56,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/0057-balao-adventure\/0057 - Bal\u00e3o Adventure.swf"
+        "swf_file_path":"games\/0057-balao-adventure\/0057 - Bal\u00e3o Adventure.swf"
     },
     "010-world-cup-prep":{
         "metadata":{
@@ -86,7 +86,7 @@
                 "emulation"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/010-world-cup-prep\/010-world-cup-prep.swf"
+        "swf_file_path":"games\/010-world-cup-prep\/010-world-cup-prep.swf"
     },
     "0232-save-them-gold-fish":{
         "metadata":{
@@ -120,7 +120,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/0232-save-them-gold-fish\/0232 - Save Them Gold Fish.swf"
+        "swf_file_path":"games\/0232-save-them-gold-fish\/0232 - Save Them Gold Fish.swf"
     },
     "03-demolition-drifters_flash":{
         "metadata":{
@@ -149,7 +149,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20231117161955[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/03-demolition-drifters_flash\/03_demolition_drifters.swf"
+        "swf_file_path":"games\/03-demolition-drifters_flash\/03_demolition_drifters.swf"
     },
     "06-truck-mania_flash":{
         "metadata":{
@@ -177,7 +177,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20230918011626[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/06-truck-mania_flash\/06_truck_mania.swf"
+        "swf_file_path":"games\/06-truck-mania_flash\/06_truck_mania.swf"
     },
     "0734-sheep-the-game":{
         "metadata":{
@@ -211,7 +211,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/0734-sheep-the-game\/0734 - Sheep The Game.swf"
+        "swf_file_path":"games\/0734-sheep-the-game\/0734 - Sheep The Game.swf"
     },
     "0747-park-a-lot":{
         "metadata":{
@@ -245,7 +245,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/0747-park-a-lot\/0747 - Park-a-Lot.swf"
+        "swf_file_path":"games\/0747-park-a-lot\/0747 - Park-a-Lot.swf"
     },
     "0773-alpine-escape":{
         "metadata":{
@@ -279,7 +279,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/0773-alpine-escape\/0773 - Alpine Escape.swf"
+        "swf_file_path":"games\/0773-alpine-escape\/0773 - Alpine Escape.swf"
     },
     "0809-polar-rescue":{
         "metadata":{
@@ -312,7 +312,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/0809-polar-rescue\/0809 - Polar Rescue.swf"
+        "swf_file_path":"games\/0809-polar-rescue\/0809 - Polar Rescue.swf"
     },
     "0867-ant-city":{
         "metadata":{
@@ -345,7 +345,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/0867-ant-city\/0867 - Ant City.swf"
+        "swf_file_path":"games\/0867-ant-city\/0867 - Ant City.swf"
     },
     "10-gnomes-1-the-rooftops":{
         "metadata":{
@@ -375,7 +375,7 @@
             "year":"2008",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/10-gnomes-1-the-rooftops\/10g_01.swf"
+        "swf_file_path":"games\/10-gnomes-1-the-rooftops\/10g_01.swf"
     },
     "10-gnomes-10-seashore":{
         "metadata":{
@@ -405,7 +405,7 @@
             "year":"2008",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/10-gnomes-10-seashore\/10g_10.swf"
+        "swf_file_path":"games\/10-gnomes-10-seashore\/10g_10.swf"
     },
     "10-gnomes-11-the-remains":{
         "metadata":{
@@ -435,7 +435,7 @@
             "year":"2008",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/10-gnomes-11-the-remains\/10g_11.swf"
+        "swf_file_path":"games\/10-gnomes-11-the-remains\/10g_11.swf"
     },
     "10-gnomes-12-the-tank":{
         "metadata":{
@@ -465,7 +465,7 @@
             "year":"2008",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/10-gnomes-12-the-tank\/10g_12.swf"
+        "swf_file_path":"games\/10-gnomes-12-the-tank\/10g_12.swf"
     },
     "10-gnomes-2-walk-in-the-park":{
         "metadata":{
@@ -495,7 +495,7 @@
             "year":"2008",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/10-gnomes-2-walk-in-the-park\/10g_02.swf"
+        "swf_file_path":"games\/10-gnomes-2-walk-in-the-park\/10g_02.swf"
     },
     "10-gnomes-3-spring-garden-march":{
         "metadata":{
@@ -525,7 +525,7 @@
             "year":"2008",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/10-gnomes-3-spring-garden-march\/10g_03.swf"
+        "swf_file_path":"games\/10-gnomes-3-spring-garden-march\/10g_03.swf"
     },
     "10-gnomes-4-foggy-flat":{
         "metadata":{
@@ -555,7 +555,7 @@
             "year":"2008",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/10-gnomes-4-foggy-flat\/10g_04.swf"
+        "swf_file_path":"games\/10-gnomes-4-foggy-flat\/10g_04.swf"
     },
     "10-gnomes-5-the-shipyard":{
         "metadata":{
@@ -585,7 +585,7 @@
             "year":"2008",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/10-gnomes-5-the-shipyard\/10g_05.swf"
+        "swf_file_path":"games\/10-gnomes-5-the-shipyard\/10g_05.swf"
     },
     "10-gnomes-6-the-hall":{
         "metadata":{
@@ -615,7 +615,7 @@
             "year":"2008",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/10-gnomes-6-the-hall\/10g_06.swf"
+        "swf_file_path":"games\/10-gnomes-6-the-hall\/10g_06.swf"
     },
     "10-gnomes-7-the-solitude":{
         "metadata":{
@@ -645,7 +645,7 @@
             "year":"2008",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/10-gnomes-7-the-solitude\/10g_07.swf"
+        "swf_file_path":"games\/10-gnomes-7-the-solitude\/10g_07.swf"
     },
     "10-gnomes-8-water-forge":{
         "metadata":{
@@ -675,7 +675,7 @@
             "year":"2008",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/10-gnomes-8-water-forge\/10g_08.swf"
+        "swf_file_path":"games\/10-gnomes-8-water-forge\/10g_08.swf"
     },
     "10-gnomes-9-chemistry":{
         "metadata":{
@@ -705,7 +705,7 @@
             "year":"2008",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/10-gnomes-9-chemistry\/10g_09.swf"
+        "swf_file_path":"games\/10-gnomes-9-chemistry\/10g_09.swf"
     },
     "10-gnomes-in-bologna":{
         "metadata":{
@@ -735,7 +735,7 @@
             "year":"2010",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/10-gnomes-in-bologna\/10_gnomes_in_Bologna.swf"
+        "swf_file_path":"games\/10-gnomes-in-bologna\/10_gnomes_in_Bologna.swf"
     },
     "10-gnomes-in-dubrovnik":{
         "metadata":{
@@ -765,7 +765,7 @@
             "year":"2013",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/10-gnomes-in-dubrovnik\/10_gnomes_in_Dubrovnik.swf"
+        "swf_file_path":"games\/10-gnomes-in-dubrovnik\/10_gnomes_in_Dubrovnik.swf"
     },
     "10-gnomes-in-liege":{
         "metadata":{
@@ -795,7 +795,7 @@
             "year":"2011",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/10-gnomes-in-liege\/10_gnomes_in_Liege.swf"
+        "swf_file_path":"games\/10-gnomes-in-liege\/10_gnomes_in_Liege.swf"
     },
     "10-gnomes-in-montaigut-le-blanc":{
         "metadata":{
@@ -825,7 +825,7 @@
             "year":"2015",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/10-gnomes-in-montaigut-le-blanc\/10_gnomes_montaigut.swf"
+        "swf_file_path":"games\/10-gnomes-in-montaigut-le-blanc\/10_gnomes_montaigut.swf"
     },
     "10-gnomes-in-porto-preto":{
         "metadata":{
@@ -854,7 +854,7 @@
             "year":"2012",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/10-gnomes-in-porto-preto\/10_gnomes_in_porto_petro.swf"
+        "swf_file_path":"games\/10-gnomes-in-porto-preto\/10_gnomes_in_porto_petro.swf"
     },
     "10-gnomes-in-venice":{
         "metadata":{
@@ -883,7 +883,7 @@
             "year":"2014",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/10-gnomes-in-venice\/10_gnomes_in_Venice.swf"
+        "swf_file_path":"games\/10-gnomes-in-venice\/10_gnomes_in_Venice.swf"
     },
     "10-more-bullets_flash":{
         "metadata":{
@@ -918,7 +918,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/10-more-bullets_flash\/10_More_Bullets.swf"
+        "swf_file_path":"games\/10-more-bullets_flash\/10_More_Bullets.swf"
     },
     "100-things-to-do-before-high-school-memory":{
         "metadata":{
@@ -952,7 +952,7 @@
             "publisher":"MGA Games \/ MGA Entertainment",
             "description":"<b>Source:<\/b> 9o3o\u00a0<a href=\"https:\/\/ooooooooo.ooo\/static\/?2532ccb6-d472-45b6-9c82-a96e8ce6b08e\" rel=\"ugc nofollow\">Miuchiz Bratz<\/a>"
         },
-        "swf_file_path":"flash_games_download_updated\/100-things-to-do-before-high-school-memory\/A-g731_v20_84002.swf"
+        "swf_file_path":"games\/100-things-to-do-before-high-school-memory\/A-g731_v20_84002.swf"
     },
     "100-things_to-do-before-high-school-puzzle":{
         "metadata":{
@@ -978,7 +978,7 @@
             "emulator_ext":"swf",
             "curation":"[curator]validator@archive.org[\/curator][date]20231119190554[\/date][comment]checked for malware[\/comment]"
         },
-        "swf_file_path":"flash_games_download_updated\/100-things_to-do-before-high-school-puzzle\/puzzle-with-100-things-to-do-before-high-school-1467576393.swf"
+        "swf_file_path":"games\/100-things_to-do-before-high-school-puzzle\/puzzle-with-100-things-to-do-before-high-school-1467576393.swf"
     },
     "1082-lord-oz-wald":{
         "metadata":{
@@ -1011,7 +1011,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/1082-lord-oz-wald\/1082 - Lord OzWald.swf"
+        "swf_file_path":"games\/1082-lord-oz-wald\/1082 - Lord OzWald.swf"
     },
     "12-truck-mania-2_flash":{
         "metadata":{
@@ -1042,7 +1042,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20231001223509[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/12-truck-mania-2_flash\/12_truck_mania_2.swf"
+        "swf_file_path":"games\/12-truck-mania-2_flash\/12_truck_mania_2.swf"
     },
     "12181-super-mario-star-scramble-3":{
         "metadata":{
@@ -1071,7 +1071,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20221027223201[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/12181-super-mario-star-scramble-3\/12181-super-mario-star-scramble-3.swf"
+        "swf_file_path":"games\/12181-super-mario-star-scramble-3\/12181-super-mario-star-scramble-3.swf"
     },
     "1259-dadn-me":{
         "metadata":{
@@ -1104,7 +1104,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/1259-dadn-me\/1259 - Dad'n Me.swf"
+        "swf_file_path":"games\/1259-dadn-me\/1259 - Dad'n Me.swf"
     },
     "1268-heli-attack-3":{
         "metadata":{
@@ -1137,7 +1137,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/1268-heli-attack-3\/1268 - Heli Attack 3.swf"
+        "swf_file_path":"games\/1268-heli-attack-3\/1268 - Heli Attack 3.swf"
     },
     "1269-mother-load":{
         "metadata":{
@@ -1170,7 +1170,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/1269-mother-load\/1269 - MotherLoad.swf"
+        "swf_file_path":"games\/1269-mother-load\/1269 - MotherLoad.swf"
     },
     "12holesofxmas_flash":{
         "metadata":{
@@ -1200,7 +1200,7 @@
             "year":"2005",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/12holesofxmas_flash\/12holesofxmas.swf"
+        "swf_file_path":"games\/12holesofxmas_flash\/12holesofxmas.swf"
     },
     "1422-samurai-sam":{
         "metadata":{
@@ -1233,7 +1233,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/1422-samurai-sam\/1422 - Samurai Sam.swf"
+        "swf_file_path":"games\/1422-samurai-sam\/1422 - Samurai Sam.swf"
     },
     "1427728348-sports-heads-volleyball_flash":{
         "metadata":{
@@ -1265,7 +1265,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20240120234155[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/1427728348-sports-heads-volleyball_flash\/1427728348_Sports_Heads_Volleyball.swf"
+        "swf_file_path":"games\/1427728348-sports-heads-volleyball_flash\/1427728348_Sports_Heads_Volleyball.swf"
     },
     "1434-prince-of-persia-special-edition":{
         "metadata":{
@@ -1298,7 +1298,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/1434-prince-of-persia-special-edition\/1434 - Prince of Persia Special Edition.swf"
+        "swf_file_path":"games\/1434-prince-of-persia-special-edition\/1434 - Prince of Persia Special Edition.swf"
     },
     "1468-super-mario-rampage":{
         "metadata":{
@@ -1331,7 +1331,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/1468-super-mario-rampage\/1468 - Super Mario Rampage.swf"
+        "swf_file_path":"games\/1468-super-mario-rampage\/1468 - Super Mario Rampage.swf"
     },
     "1486-the-amulet":{
         "metadata":{
@@ -1363,7 +1363,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/1486-the-amulet\/1486 - The Amulet.swf"
+        "swf_file_path":"games\/1486-the-amulet\/1486 - The Amulet.swf"
     },
     "15-aevil":{
         "metadata":{
@@ -1404,7 +1404,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/15-aevil\/15_aevil.swf"
+        "swf_file_path":"games\/15-aevil\/15_aevil.swf"
     },
     "1520-desert-strike":{
         "metadata":{
@@ -1438,7 +1438,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/1520-desert-strike\/1520 - Desert Strike.swf"
+        "swf_file_path":"games\/1520-desert-strike\/1520 - Desert Strike.swf"
     },
     "1523-hoverbot":{
         "metadata":{
@@ -1471,7 +1471,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/1523-hoverbot\/1523 - Hoverbot.swf"
+        "swf_file_path":"games\/1523-hoverbot\/1523 - Hoverbot.swf"
     },
     "1533-the-legend-of-zelda-lampshade":{
         "metadata":{
@@ -1504,7 +1504,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/1533-the-legend-of-zelda-lampshade\/1533 - The Legend of Zelda - Lampshade.swf"
+        "swf_file_path":"games\/1533-the-legend-of-zelda-lampshade\/1533 - The Legend of Zelda - Lampshade.swf"
     },
     "1541-prince-of-war":{
         "metadata":{
@@ -1537,7 +1537,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/1541-prince-of-war\/1541 - Prince of War.swf"
+        "swf_file_path":"games\/1541-prince-of-war\/1541 - Prince of War.swf"
     },
     "1549-brink-of-alienation-3-homeworld":{
         "metadata":{
@@ -1570,7 +1570,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/1549-brink-of-alienation-3-homeworld\/1549 - Brink of Alienation 3 - Homeworld.swf"
+        "swf_file_path":"games\/1549-brink-of-alienation-3-homeworld\/1549 - Brink of Alienation 3 - Homeworld.swf"
     },
     "1595-stealth-hunter":{
         "metadata":{
@@ -1603,7 +1603,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/1595-stealth-hunter\/1595 - Stealth Hunter.swf"
+        "swf_file_path":"games\/1595-stealth-hunter\/1595 - Stealth Hunter.swf"
     },
     "16-money-truck_flash":{
         "metadata":{
@@ -1634,7 +1634,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20231001224113[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/16-money-truck_flash\/16_money_truck.swf"
+        "swf_file_path":"games\/16-money-truck_flash\/16_money_truck.swf"
     },
     "1627-armor-heroes":{
         "metadata":{
@@ -1667,7 +1667,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/1627-armor-heroes\/1627 - Armor Heroes.swf"
+        "swf_file_path":"games\/1627-armor-heroes\/1627 - Armor Heroes.swf"
     },
     "1632-feed-me":{
         "metadata":{
@@ -1700,7 +1700,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/1632-feed-me\/1632 - Feed Me.swf"
+        "swf_file_path":"games\/1632-feed-me\/1632 - Feed Me.swf"
     },
     "1933-fancy-pants-adventure-2-beta":{
         "metadata":{
@@ -1734,7 +1734,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/1933-fancy-pants-adventure-2-beta\/1933 - Fancy Pants Adventure 2 Beta.swf"
+        "swf_file_path":"games\/1933-fancy-pants-adventure-2-beta\/1933 - Fancy Pants Adventure 2 Beta.swf"
     },
     "1945_vs_2000":{
         "metadata":{
@@ -1760,7 +1760,7 @@
             "curation":"[curator]kaplan@archive.org[\/curator][date]20240313032912[\/date][state]un-dark[\/state]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/1945_vs_2000\/1945 Vs 2000.swf"
+        "swf_file_path":"games\/1945_vs_2000\/1945 Vs 2000.swf"
     },
     "2039-rider_flash":{
         "metadata":{
@@ -1798,7 +1798,7 @@
                 "emulation"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/2039-rider_flash\/2039-rider.swf"
+        "swf_file_path":"games\/2039-rider_flash\/2039-rider.swf"
     },
     "2048-flash":{
         "metadata":{
@@ -1828,7 +1828,7 @@
             "year":"2014",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/2048-flash\/2048.swf"
+        "swf_file_path":"games\/2048-flash\/2048.swf"
     },
     "2048-game":{
         "metadata":{
@@ -1861,7 +1861,7 @@
             "year":"2014",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/2048-game\/_2048_game__by_ken1171_d86sf9r.swf"
+        "swf_file_path":"games\/2048-game\/_2048_game__by_ken1171_d86sf9r.swf"
     },
     "21-truck-wars_flash":{
         "metadata":{
@@ -1890,7 +1890,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20230918011030[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/21-truck-wars_flash\/21_truck_wars.swf"
+        "swf_file_path":"games\/21-truck-wars_flash\/21_truck_wars.swf"
     },
     "244061-ping-pong_flash":{
         "metadata":{
@@ -1924,7 +1924,7 @@
             "year":"2005",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/244061-ping-pong_flash\/244061_ping_pong.swf"
+        "swf_file_path":"games\/244061-ping-pong_flash\/244061_ping_pong.swf"
     },
     "29158-mermaidslacking-tk":{
         "metadata":{
@@ -1962,7 +1962,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/29158-mermaidslacking-tk\/29158_mermaidslacking_tk.swf"
+        "swf_file_path":"games\/29158-mermaidslacking-tk\/29158_mermaidslacking_tk.swf"
     },
     "2_billiards-2-play":{
         "metadata":{
@@ -1990,7 +1990,7 @@
             "emulator_ext":"swf",
             "publisher":"Benz.be"
         },
-        "swf_file_path":"flash_games_download_updated\/2_billiards-2-play\/2_billiards_2_play.swf"
+        "swf_file_path":"games\/2_billiards-2-play\/2_billiards_2_play.swf"
     },
     "300-club-bowling-secure":{
         "metadata":{
@@ -2019,7 +2019,7 @@
             "year":"2011",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/300-club-bowling-secure\/300-club-bowling_Secure.swf"
+        "swf_file_path":"games\/300-club-bowling-secure\/300-club-bowling_Secure.swf"
     },
     "35159":{
         "metadata":{
@@ -2054,7 +2054,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/35159\/35159.swf"
+        "swf_file_path":"games\/35159\/35159.swf"
     },
     "3d-jetski-racing":{
         "metadata":{
@@ -2080,7 +2080,7 @@
             "creator":"Baller Arcade",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/3d-jetski-racing\/3d-jetski-racing.swf"
+        "swf_file_path":"games\/3d-jetski-racing\/3d-jetski-racing.swf"
     },
     "3d-rookie-cop":{
         "metadata":{
@@ -2109,7 +2109,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20230526132448[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/3d-rookie-cop\/3d-rookie-cop.swf"
+        "swf_file_path":"games\/3d-rookie-cop\/3d-rookie-cop.swf"
     },
     "3d-rookie-cop-2":{
         "metadata":{
@@ -2138,7 +2138,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20230526141252[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/3d-rookie-cop-2\/3d_rookie_cop_2.swf"
+        "swf_file_path":"games\/3d-rookie-cop-2\/3d_rookie_cop_2.swf"
     },
     "3d-space-car_flash":{
         "metadata":{
@@ -2167,7 +2167,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20231003004223[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/3d-space-car_flash\/3d_space_car.swf"
+        "swf_file_path":"games\/3d-space-car_flash\/3d_space_car.swf"
     },
     "3d-super-ride":{
         "metadata":{
@@ -2196,7 +2196,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20230526131944[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/3d-super-ride\/3d-super-ride.swf"
+        "swf_file_path":"games\/3d-super-ride\/3d-super-ride.swf"
     },
     "3d-urban-madness":{
         "metadata":{
@@ -2226,7 +2226,7 @@
             "emulator_ext":"swf",
             "series":"3D Urban Madness"
         },
-        "swf_file_path":"flash_games_download_updated\/3d-urban-madness\/3d-urban-madness.swf"
+        "swf_file_path":"games\/3d-urban-madness\/3d-urban-madness.swf"
     },
     "3d-urban-madness-2":{
         "metadata":{
@@ -2256,7 +2256,7 @@
             "emulator_ext":"swf",
             "series":"3D Urban Madness"
         },
-        "swf_file_path":"flash_games_download_updated\/3d-urban-madness-2\/7308727498.swf"
+        "swf_file_path":"games\/3d-urban-madness-2\/7308727498.swf"
     },
     "3d_taxi_racing":{
         "metadata":{
@@ -2282,7 +2282,7 @@
             "emulator_ext":"swf",
             "language":"eng"
         },
-        "swf_file_path":"flash_games_download_updated\/3d_taxi_racing\/188.swf"
+        "swf_file_path":"games\/3d_taxi_racing\/188.swf"
     },
     "3dfieldgoal_flash":{
         "metadata":{
@@ -2314,7 +2314,7 @@
             "year":"2006",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/3dfieldgoal_flash\/3dfieldgoal.swf"
+        "swf_file_path":"games\/3dfieldgoal_flash\/3dfieldgoal.swf"
     },
     "480848-om":{
         "metadata":{
@@ -2348,7 +2348,7 @@
             "emulator_ext":"swf",
             "notes":"This game is also known as \"Clinically Obese SMB\"."
         },
-        "swf_file_path":"flash_games_download_updated\/480848-om\/480848_om.swf"
+        "swf_file_path":"games\/480848-om\/480848_om.swf"
     },
     "4x-4-monster-2_flash":{
         "metadata":{
@@ -2376,7 +2376,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20231002105922[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/4x-4-monster-2_flash\/4x4-monster-2.swf"
+        "swf_file_path":"games\/4x-4-monster-2_flash\/4x4-monster-2.swf"
     },
     "4x-4-monster-3_flash":{
         "metadata":{
@@ -2410,7 +2410,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/4x-4-monster-3_flash\/4x4-monster-3.swf"
+        "swf_file_path":"games\/4x-4-monster-3_flash\/4x4-monster-3.swf"
     },
     "4x-4monstrum_flash":{
         "metadata":{
@@ -2438,7 +2438,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20230921120843[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/4x-4monstrum_flash\/4x4monstrum.swf"
+        "swf_file_path":"games\/4x-4monstrum_flash\/4x4monstrum.swf"
     },
     "51872ca3bbe91":{
         "metadata":{
@@ -2475,7 +2475,7 @@
             ],
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/51872ca3bbe91\/51872ca3bbe91.swf"
+        "swf_file_path":"games\/51872ca3bbe91\/51872ca3bbe91.swf"
     },
     "5252-game-datedreamb":{
         "metadata":{
@@ -2515,7 +2515,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/5252-game-datedreamb\/5252-game-datedreamb.swf"
+        "swf_file_path":"games\/5252-game-datedreamb\/5252-game-datedreamb.swf"
     },
     "54122_flash":{
         "metadata":{
@@ -2547,7 +2547,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20231003003830[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/54122_flash\/54122.swf"
+        "swf_file_path":"games\/54122_flash\/54122.swf"
     },
     "544508-colortheoryfinalnoads_flash":{
         "metadata":{
@@ -2579,7 +2579,7 @@
             "year":"2010",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/544508-colortheoryfinalnoads_flash\/544508_colortheoryfinalnoads.swf"
+        "swf_file_path":"games\/544508-colortheoryfinalnoads_flash\/544508_colortheoryfinalnoads.swf"
     },
     "576720-rainbow-poop-game":{
         "metadata":{
@@ -2612,7 +2612,7 @@
             "publisher":"Newgrounds",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/576720-rainbow-poop-game\/576720_Rainbow_Poop_Game.swf"
+        "swf_file_path":"games\/576720-rainbow-poop-game\/576720_Rainbow_Poop_Game.swf"
     },
     "60secondssantarun_flash":{
         "metadata":{
@@ -2645,7 +2645,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20231228035252[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/60secondssantarun_flash\/60secondssantarun.swf"
+        "swf_file_path":"games\/60secondssantarun_flash\/60secondssantarun.swf"
     },
     "643423-basketball-01_flash":{
         "metadata":{
@@ -2677,7 +2677,7 @@
             "year":"2014",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/643423-basketball-01_flash\/643423_basketball-01.swf"
+        "swf_file_path":"games\/643423-basketball-01_flash\/643423_basketball-01.swf"
     },
     "8e50c8c5-d60f-73d5-3a97-f73359977ea2":{
         "metadata":{
@@ -2714,7 +2714,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/8e50c8c5-d60f-73d5-3a97-f73359977ea2\/twee.swf"
+        "swf_file_path":"games\/8e50c8c5-d60f-73d5-3a97-f73359977ea2\/twee.swf"
     },
     "Airhockey_FOG":{
         "metadata":{
@@ -2751,7 +2751,7 @@
                 "emulation"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/Airhockey_FOG\/airhockey.swf"
+        "swf_file_path":"games\/Airhockey_FOG\/airhockey.swf"
     },
     "Classic-cup_flash":{
         "metadata":{
@@ -2781,7 +2781,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20231019020808[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/Classic-cup_flash\/807691751.swf"
+        "swf_file_path":"games\/Classic-cup_flash\/807691751.swf"
     },
     "Indestructotank_flash":{
         "metadata":{
@@ -2818,7 +2818,7 @@
             "year":"2007",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/Indestructotank_flash\/Indestructotank.swf"
+        "swf_file_path":"games\/Indestructotank_flash\/Indestructotank.swf"
     },
     "Multishop-Tycoon":{
         "metadata":{
@@ -2858,7 +2858,7 @@
             "year":"2014",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/Multishop-Tycoon\/secure_MultishopTycoon_v1_3_0.swf"
+        "swf_file_path":"games\/Multishop-Tycoon\/secure_MultishopTycoon_v1_3_0.swf"
     },
     "Night-Rider-Turbo-Flash-Game":{
         "metadata":{
@@ -2900,7 +2900,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/Night-Rider-Turbo-Flash-Game\/night_rider_turbo_game.swf"
+        "swf_file_path":"games\/Night-Rider-Turbo-Flash-Game\/night_rider_turbo_game.swf"
     },
     "Phoenotopia.":{
         "metadata":{
@@ -2938,7 +2938,7 @@
             "emulator":"ruffle-swf",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/Phoenotopia.\/phoenotopiaMjI1Mw==.swf"
+        "swf_file_path":"games\/Phoenotopia.\/phoenotopiaMjI1Mw==.swf"
     },
     "Space...Fighter...XX9":{
         "metadata":{
@@ -2968,7 +2968,7 @@
             "publisher":"Newgrounds",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/Space...Fighter...XX9\/615290_Pace.swf"
+        "swf_file_path":"games\/Space...Fighter...XX9\/615290_Pace.swf"
     },
     "Sportsheadstennis":{
         "metadata":{
@@ -2999,7 +2999,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20240305134711[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/Sportsheadstennis\/Sportsheadstennis.swf"
+        "swf_file_path":"games\/Sportsheadstennis\/Sportsheadstennis.swf"
     },
     "Theme_Hotel":{
         "metadata":{
@@ -3029,7 +3029,7 @@
             "year":"2011",
             "publisher":"GamesFree.com"
         },
-        "swf_file_path":"flash_games_download_updated\/Theme_Hotel\/theme-hotel-12688fdd9.swf"
+        "swf_file_path":"games\/Theme_Hotel\/theme-hotel-12688fdd9.swf"
     },
     "WHAT-A-SHOT":{
         "metadata":{
@@ -3058,7 +3058,7 @@
             "year":"2001",
             "publisher":"www.octopi.com"
         },
-        "swf_file_path":"flash_games_download_updated\/WHAT-A-SHOT\/2.swf"
+        "swf_file_path":"games\/WHAT-A-SHOT\/2.swf"
     },
     "Wanadoo_en_la_Jungla":{
         "metadata":{
@@ -3101,7 +3101,7 @@
             "emulator_ext":"swf",
             "date":"2000"
         },
-        "swf_file_path":"flash_games_download_updated\/Wanadoo_en_la_Jungla\/La jungla.swf"
+        "swf_file_path":"games\/Wanadoo_en_la_Jungla\/La jungla.swf"
     },
     "Yathzee23":{
         "metadata":{
@@ -3129,7 +3129,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20231105174149[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/Yathzee23\/yathzee23board23.swf"
+        "swf_file_path":"games\/Yathzee23\/yathzee23board23.swf"
     },
     "a-day-of-slacking":{
         "metadata":{
@@ -3163,7 +3163,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/a-day-of-slacking\/a-day-of-slacking.swf"
+        "swf_file_path":"games\/a-day-of-slacking\/a-day-of-slacking.swf"
     },
     "a-ghoul-academy-christmas":{
         "metadata":{
@@ -3201,7 +3201,7 @@
                 "emulation"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/a-ghoul-academy-christmas\/a_ghoul_academy_christmas.swf"
+        "swf_file_path":"games\/a-ghoul-academy-christmas\/a_ghoul_academy_christmas.swf"
     },
     "a-mazegame":{
         "metadata":{
@@ -3228,7 +3228,7 @@
             "curation":"[curator]kaplan@archive.org[\/curator][date]20240313032912[\/date][state]un-dark[\/state]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/a-mazegame\/a-mazegame.swf"
+        "swf_file_path":"games\/a-mazegame\/a-mazegame.swf"
     },
     "a-whiff-of-christmas":{
         "metadata":{
@@ -3261,7 +3261,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/a-whiff-of-christmas\/a_whiff_of_christmas.swf"
+        "swf_file_path":"games\/a-whiff-of-christmas\/a_whiff_of_christmas.swf"
     },
     "abobos-big_adventure":{
         "metadata":{
@@ -3351,7 +3351,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/abobos-big_adventure\/abobo.swf"
+        "swf_file_path":"games\/abobos-big_adventure\/abobo.swf"
     },
     "acid-factory":{
         "metadata":{
@@ -3375,7 +3375,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20231114150155[\/date][comment]checked for malware[\/comment]",
             "description":"<b>Source:<\/b> 9o3o\u00a0<a href=\"https:\/\/ooooooooo.ooo\/static\/?0d281bf6-3e6c-4a95-9231-ee99fde06984\" rel=\"nofollow\">Acid Factory<\/a>"
         },
-        "swf_file_path":"flash_games_download_updated\/acid-factory\/acidfactory.swf"
+        "swf_file_path":"games\/acid-factory\/acidfactory.swf"
     },
     "acid-labyrinth":{
         "metadata":{
@@ -3404,7 +3404,7 @@
             "publisher":"Andkon Arcade",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/acid-labyrinth\/acidlabyrinth.swf"
+        "swf_file_path":"games\/acid-labyrinth\/acidlabyrinth.swf"
     },
     "adobeflash-60secondsburgerrun":{
         "metadata":{
@@ -3441,7 +3441,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/adobeflash-60secondsburgerrun\/60secondsburgerrun.swf"
+        "swf_file_path":"games\/adobeflash-60secondsburgerrun\/60secondsburgerrun.swf"
     },
     "adobeflash-60secondssantarun":{
         "metadata":{
@@ -3480,7 +3480,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/adobeflash-60secondssantarun\/60secondsSantaRun1212_600x400.swf"
+        "swf_file_path":"games\/adobeflash-60secondssantarun\/60secondsSantaRun1212_600x400.swf"
     },
     "adobeflash-drmariovitamintoss":{
         "metadata":{
@@ -3519,7 +3519,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/adobeflash-drmariovitamintoss\/Dr Mario Vitamin Toss.swf"
+        "swf_file_path":"games\/adobeflash-drmariovitamintoss\/Dr Mario Vitamin Toss.swf"
     },
     "adobeflash-soniconyoshisisland":{
         "metadata":{
@@ -3563,7 +3563,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/adobeflash-soniconyoshisisland\/558631_Sonic_On_Yoshi_s_Island_Di.swf"
+        "swf_file_path":"games\/adobeflash-soniconyoshisisland\/558631_Sonic_On_Yoshi_s_Island_Di.swf"
     },
     "adobeflash-ultimateflashsonic":{
         "metadata":{
@@ -3607,7 +3607,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/adobeflash-ultimateflashsonic\/151706_ultimate_sonic.swf"
+        "swf_file_path":"games\/adobeflash-ultimateflashsonic\/151706_ultimate_sonic.swf"
     },
     "ag3d_20231201":{
         "metadata":{
@@ -3639,7 +3639,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/ag3d_20231201\/ag3d.swf"
+        "swf_file_path":"games\/ag3d_20231201\/ag3d.swf"
     },
     "air-traffic-madness":{
         "metadata":{
@@ -3670,7 +3670,7 @@
             "publisher":"Kill5 Games",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/air-traffic-madness\/567859_airTrafficMadness.swf"
+        "swf_file_path":"games\/air-traffic-madness\/567859_airTrafficMadness.swf"
     },
     "airhockey_flash_202312":{
         "metadata":{
@@ -3702,7 +3702,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20231224055144[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/airhockey_flash_202312\/airhockey.swf"
+        "swf_file_path":"games\/airhockey_flash_202312\/airhockey.swf"
     },
     "airhockeygraphics4_flash":{
         "metadata":{
@@ -3734,7 +3734,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20240120204221[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/airhockeygraphics4_flash\/airhockeygraphics4.swf"
+        "swf_file_path":"games\/airhockeygraphics4_flash\/airhockeygraphics4.swf"
     },
     "airplane-runway-parking":{
         "metadata":{
@@ -3767,7 +3767,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/airplane-runway-parking\/Airplane_Runway_Parking.swf"
+        "swf_file_path":"games\/airplane-runway-parking\/Airplane_Runway_Parking.swf"
     },
     "airplane-slacking2":{
         "metadata":{
@@ -3797,7 +3797,7 @@
             "year":"2012",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/airplane-slacking2\/airplane-slacking2.swf"
+        "swf_file_path":"games\/airplane-slacking2\/airplane-slacking2.swf"
     },
     "airport-bus-parking":{
         "metadata":{
@@ -3833,7 +3833,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/airport-bus-parking\/airport-bus-parking.swf"
+        "swf_file_path":"games\/airport-bus-parking\/airport-bus-parking.swf"
     },
     "airport-service-parking":{
         "metadata":{
@@ -3866,7 +3866,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/airport-service-parking\/airport_service_parking.swf"
+        "swf_file_path":"games\/airport-service-parking\/airport_service_parking.swf"
     },
     "alkie-kong-2":{
         "metadata":{
@@ -3897,7 +3897,7 @@
             "date":"2007-09-13",
             "year":"2007"
         },
-        "swf_file_path":"flash_games_download_updated\/alkie-kong-2\/Alkie_Kong_2.swf"
+        "swf_file_path":"games\/alkie-kong-2\/Alkie_Kong_2.swf"
     },
     "alpine-escape":{
         "metadata":{
@@ -3924,7 +3924,7 @@
             "emulator_ext":"swf",
             "curation":"[curator]validator@archive.org[\/curator][date]20231120175650[\/date][comment]checked for malware[\/comment]"
         },
-        "swf_file_path":"flash_games_download_updated\/alpine-escape\/5CC974F419B9F369D911348F5DFBE81D.swf"
+        "swf_file_path":"games\/alpine-escape\/5CC974F419B9F369D911348F5DFBE81D.swf"
     },
     "alpine-skiing_":{
         "metadata":{
@@ -3958,7 +3958,7 @@
             ],
             "notes":"This game opens in fullscreen. To exit out in fullscreen, press the ESC key."
         },
-        "swf_file_path":"flash_games_download_updated\/alpine-skiing_\/2.swf"
+        "swf_file_path":"games\/alpine-skiing_\/2.swf"
     },
     "ambia_202201":{
         "metadata":{
@@ -3990,7 +3990,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20220102033015[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/ambia_202201\/ambia.swf"
+        "swf_file_path":"games\/ambia_202201\/ambia.swf"
     },
     "amphibious-challenge":{
         "metadata":{
@@ -4018,7 +4018,7 @@
             "publisher":"Top Gear",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/amphibious-challenge\/amphibious_challenge.swf"
+        "swf_file_path":"games\/amphibious-challenge\/amphibious_challenge.swf"
     },
     "amy-astronaut_":{
         "metadata":{
@@ -4049,7 +4049,7 @@
             "emulator_ext":"swf",
             "curation":"[curator]validator@archive.org[\/curator][date]20240125142827[\/date][comment]checked for malware[\/comment]"
         },
-        "swf_file_path":"flash_games_download_updated\/amy-astronaut_\/amy_astronaut.swf"
+        "swf_file_path":"games\/amy-astronaut_\/amy_astronaut.swf"
     },
     "angel-devil-girl-dressup_202212":{
         "metadata":{
@@ -4084,7 +4084,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/angel-devil-girl-dressup_202212\/AngelDevilGirlDressup.swf"
+        "swf_file_path":"games\/angel-devil-girl-dressup_202212\/AngelDevilGirlDressup.swf"
     },
     "angry-birds-bike-revenge":{
         "metadata":{
@@ -4113,7 +4113,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20221024201612[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/angry-birds-bike-revenge\/angry-birds-bike-revenge.swf"
+        "swf_file_path":"games\/angry-birds-bike-revenge\/angry-birds-bike-revenge.swf"
     },
     "angrybowling":{
         "metadata":{
@@ -4143,7 +4143,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20221023220034[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/angrybowling\/angrybowling.swf"
+        "swf_file_path":"games\/angrybowling\/angrybowling.swf"
     },
     "anime-avatar-creator":{
         "metadata":{
@@ -4178,7 +4178,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/anime-avatar-creator\/Anime_Avatar_Creator.swf"
+        "swf_file_path":"games\/anime-avatar-creator\/Anime_Avatar_Creator.swf"
     },
     "anime-summer-girls_202207":{
         "metadata":{
@@ -4219,7 +4219,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/anime-summer-girls_202207\/anime-summer-girls.swf"
+        "swf_file_path":"games\/anime-summer-girls_202207\/anime-summer-girls.swf"
     },
     "anime_christmas_make_over":{
         "metadata":{
@@ -4254,7 +4254,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/anime_christmas_make_over\/anime_christmas_make_over_by_hlya-d35ngyy.swf"
+        "swf_file_path":"games\/anime_christmas_make_over\/anime_christmas_make_over_by_hlya-d35ngyy.swf"
     },
     "anime_dressup4":{
         "metadata":{
@@ -4288,7 +4288,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/anime_dressup4\/anime_dressup4.swf"
+        "swf_file_path":"games\/anime_dressup4\/anime_dressup4.swf"
     },
     "april-fool-slacking":{
         "metadata":{
@@ -4327,7 +4327,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/april-fool-slacking\/april-fool-slacking.swf"
+        "swf_file_path":"games\/april-fool-slacking\/april-fool-slacking.swf"
     },
     "army-parking":{
         "metadata":{
@@ -4361,7 +4361,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/army-parking\/3306.swf"
+        "swf_file_path":"games\/army-parking\/3306.swf"
     },
     "atm-m3-simulator":{
         "metadata":{
@@ -4388,7 +4388,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20231001130236[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/atm-m3-simulator\/metro_web.swf"
+        "swf_file_path":"games\/atm-m3-simulator\/metro_web.swf"
     },
     "atv-blitz":{
         "metadata":{
@@ -4415,7 +4415,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20230529115031[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/atv-blitz\/atv-blitz.swf"
+        "swf_file_path":"games\/atv-blitz\/atv-blitz.swf"
     },
     "avatar-navi-maker":{
         "metadata":{
@@ -4462,7 +4462,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/avatar-navi-maker\/avatar-navi-maker.swf"
+        "swf_file_path":"games\/avatar-navi-maker\/avatar-navi-maker.swf"
     },
     "avie_20221215":{
         "metadata":{
@@ -4497,7 +4497,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/avie_20221215\/Avie.swf"
+        "swf_file_path":"games\/avie_20221215\/Avie.swf"
     },
     "avie_christmas_style":{
         "metadata":{
@@ -4532,7 +4532,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/avie_christmas_style\/avie_christmas_style.swf"
+        "swf_file_path":"games\/avie_christmas_style\/avie_christmas_style.swf"
     },
     "baby-candy-shop-slacking":{
         "metadata":{
@@ -4565,7 +4565,7 @@
             "year":"2016",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/baby-candy-shop-slacking\/baby_candy_shop_slacking.swf"
+        "swf_file_path":"games\/baby-candy-shop-slacking\/baby_candy_shop_slacking.swf"
     },
     "baby_halloween_slacking":{
         "metadata":{
@@ -4597,7 +4597,7 @@
             "year":"2016",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/baby_halloween_slacking\/baby_halloween_slacking.swf"
+        "swf_file_path":"games\/baby_halloween_slacking\/baby_halloween_slacking.swf"
     },
     "babysitter-slacking":{
         "metadata":{
@@ -4635,7 +4635,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/babysitter-slacking\/babysitter-slacking.swf"
+        "swf_file_path":"games\/babysitter-slacking\/babysitter-slacking.swf"
     },
     "back_to-the-future-train-scene":{
         "metadata":{
@@ -4665,7 +4665,7 @@
             "year":"2005",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/back_to-the-future-train-scene\/src.swf"
+        "swf_file_path":"games\/back_to-the-future-train-scene\/src.swf"
     },
     "ballerina_doll_creator":{
         "metadata":{
@@ -4700,7 +4700,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/ballerina_doll_creator\/ballerina_doll_creator.swf"
+        "swf_file_path":"games\/ballerina_doll_creator\/ballerina_doll_creator.swf"
     },
     "barbie-cleaning-slacking":{
         "metadata":{
@@ -4730,7 +4730,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20231209172014[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/barbie-cleaning-slacking\/barbie-cleaning-slacking.swf"
+        "swf_file_path":"games\/barbie-cleaning-slacking\/barbie-cleaning-slacking.swf"
     },
     "bart-simpson-basketball":{
         "metadata":{
@@ -4762,7 +4762,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/bart-simpson-basketball\/bart_simpson_basketball.swf"
+        "swf_file_path":"games\/bart-simpson-basketball\/bart_simpson_basketball.swf"
     },
     "basketball-nba_flash":{
         "metadata":{
@@ -4794,7 +4794,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20231017042707[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/basketball-nba_flash\/basketball-nba.swf"
+        "swf_file_path":"games\/basketball-nba_flash\/basketball-nba.swf"
     },
     "basketball-shooting":{
         "metadata":{
@@ -4823,7 +4823,7 @@
                 "emulation"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/basketball-shooting\/basketballshooting.swf"
+        "swf_file_path":"games\/basketball-shooting\/basketballshooting.swf"
     },
     "blizzard-racing-hazard":{
         "metadata":{
@@ -4851,7 +4851,7 @@
             "publisher":"Gamolition",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/blizzard-racing-hazard\/1167668905.swf"
+        "swf_file_path":"games\/blizzard-racing-hazard\/1167668905.swf"
     },
     "bratz-baby-day-care":{
         "metadata":{
@@ -4878,7 +4878,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20230520104520[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/bratz-baby-day-care\/bratz_babyz_day_care.swf"
+        "swf_file_path":"games\/bratz-baby-day-care\/bratz_babyz_day_care.swf"
     },
     "candy-slacking":{
         "metadata":{
@@ -4902,7 +4902,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20230806161617[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/candy-slacking\/Candy-Slacking.swf"
+        "swf_file_path":"games\/candy-slacking\/Candy-Slacking.swf"
     },
     "candy_storeslacking":{
         "metadata":{
@@ -4933,7 +4933,7 @@
             "year":"2013",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/candy_storeslacking\/candy_storeslacking.swf"
+        "swf_file_path":"games\/candy_storeslacking\/candy_storeslacking.swf"
     },
     "cheerleader_202205":{
         "metadata":{
@@ -4968,7 +4968,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/cheerleader_202205\/cheerleader.swf"
+        "swf_file_path":"games\/cheerleader_202205\/cheerleader.swf"
     },
     "chibi-beach":{
         "metadata":{
@@ -5003,7 +5003,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/chibi-beach\/chibi-beach.swf"
+        "swf_file_path":"games\/chibi-beach\/chibi-beach.swf"
     },
     "chibi-maker4":{
         "metadata":{
@@ -5038,7 +5038,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/chibi-maker4\/chibi-maker4.swf"
+        "swf_file_path":"games\/chibi-maker4\/chibi-maker4.swf"
     },
     "chocolate-factory-slacking":{
         "metadata":{
@@ -5069,7 +5069,7 @@
             "year":"2015",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/chocolate-factory-slacking\/chocolate-factory-slacking.swf"
+        "swf_file_path":"games\/chocolate-factory-slacking\/chocolate-factory-slacking.swf"
     },
     "christmas-slacking":{
         "metadata":{
@@ -5107,7 +5107,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/christmas-slacking\/christmas-slacking.swf"
+        "swf_file_path":"games\/christmas-slacking\/christmas-slacking.swf"
     },
     "christmas_slacking":{
         "metadata":{
@@ -5139,7 +5139,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/christmas_slacking\/christmas-slacking.swf"
+        "swf_file_path":"games\/christmas_slacking\/christmas-slacking.swf"
     },
     "classroom-joker":{
         "metadata":{
@@ -5166,7 +5166,7 @@
             "curation":"[curator]validator@archive.org[\/curator][date]20240125091736[\/date][comment]checked for malware[\/comment]",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/classroom-joker\/classroom_joker.swf"
+        "swf_file_path":"games\/classroom-joker\/classroom_joker.swf"
     },
     "clean-up-slacking-android":{
         "metadata":{
@@ -5205,7 +5205,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/clean-up-slacking-android\/clean-up-slacking-android.swf"
+        "swf_file_path":"games\/clean-up-slacking-android\/clean-up-slacking-android.swf"
     },
     "cleaning-slacking":{
         "metadata":{
@@ -5246,7 +5246,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/cleaning-slacking\/cleaning-slacking.swf"
+        "swf_file_path":"games\/cleaning-slacking\/cleaning-slacking.swf"
     },
     "college_slacking":{
         "metadata":{
@@ -5277,7 +5277,7 @@
             "year":"2013",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/college_slacking\/college_slacking.swf"
+        "swf_file_path":"games\/college_slacking\/college_slacking.swf"
     },
     "cutie_student":{
         "metadata":{
@@ -5311,7 +5311,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/cutie_student\/cutie_student.swf"
+        "swf_file_path":"games\/cutie_student\/cutie_student.swf"
     },
     "dafne4":{
         "metadata":{
@@ -5346,7 +5346,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/dafne4\/dafne4.swf"
+        "swf_file_path":"games\/dafne4\/dafne4.swf"
     },
     "dandy-maker-noGallery2":{
         "metadata":{
@@ -5381,7 +5381,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/dandy-maker-noGallery2\/dandy-maker-noGallery2.swf"
+        "swf_file_path":"games\/dandy-maker-noGallery2\/dandy-maker-noGallery2.swf"
     },
     "day-at-the-farm":{
         "metadata":{
@@ -5415,7 +5415,7 @@
             "year":"2012",
             "emulator_ext":"swf"
         },
-        "swf_file_path":"flash_games_download_updated\/day-at-the-farm\/day-at-the-farm.swf"
+        "swf_file_path":"games\/day-at-the-farm\/day-at-the-farm.swf"
     },
     "detention-slacking":{
         "metadata":{
@@ -5453,7 +5453,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/detention-slacking\/detention-slacking.swf"
+        "swf_file_path":"games\/detention-slacking\/detention-slacking.swf"
     },
     "devilish_dressup":{
         "metadata":{
@@ -5488,7 +5488,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/devilish_dressup\/devilish_dressup.swf"
+        "swf_file_path":"games\/devilish_dressup\/devilish_dressup.swf"
     },
     "doll_dress_up8":{
         "metadata":{
@@ -5523,7 +5523,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/doll_dress_up8\/doll_dress_up8.swf"
+        "swf_file_path":"games\/doll_dress_up8\/doll_dress_up8.swf"
     },
     "doll_dress_up_3":{
         "metadata":{
@@ -5557,7 +5557,7 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/doll_dress_up_3\/doll_dress_up_3.swf"
+        "swf_file_path":"games\/doll_dress_up_3\/doll_dress_up_3.swf"
     },
     "doll_dressup14":{
         "metadata":{
@@ -5591,6 +5591,6 @@
                 "softwarelibrary_flash"
             ]
         },
-        "swf_file_path":"flash_games_download_updated\/doll_dressup14\/doll_dressup14.swf"
+        "swf_file_path":"games\/doll_dressup14\/doll_dressup14.swf"
     }
 }

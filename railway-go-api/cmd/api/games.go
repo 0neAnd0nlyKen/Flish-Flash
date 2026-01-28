@@ -124,7 +124,7 @@ func (app *application) getGameSWFHandler(w http.ResponseWriter, r *http.Request
 	}
 
 	// Construct the SWF file path from the metadata
-	swfPath := filepath.Join(".", "assets", "games", game.SwfFilePath)
+	swfPath := filepath.Join(".", "assets", game.SwfFilePath)
 
 	// Check if file exists
 	if _, err := os.Stat(swfPath); err != nil {
