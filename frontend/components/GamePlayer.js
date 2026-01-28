@@ -1,6 +1,6 @@
 'use client';
 // components/GamePlayer.js
-import { use, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useContext } from "react";
 import {PreferencesContext} from "../context/PreferencesContext";
 
@@ -17,7 +17,7 @@ export default function GamePlayer({ swfPath, width=800, height=600}) {
   const playerRef = useRef(null);
   const playTimeRef = useRef(0); // total play time in ms
   const playStartRef = useRef(null); // timestamp when play started
-  onPlay(); // reset play time on each render
+  // onPlay(); // reset play time on each render
   // Load Ruffle and SWF
   useEffect(() => {
     let player;
@@ -58,7 +58,7 @@ export default function GamePlayer({ swfPath, width=800, height=600}) {
             playerRef.current.play && playerRef.current.play();
           } else {
             playerRef.current.pause && playerRef.current.pause();
-            onPause();
+            // onPause();
             // onPlayTime(gameId, playTimeRef.current);
             // onTerminate()
           }
