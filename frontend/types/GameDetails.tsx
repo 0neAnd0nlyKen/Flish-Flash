@@ -1,4 +1,7 @@
 export interface GameDetails {
+    title: string;
+    description: string;
+    previewImage: any;
     file: any;
     // swf?: Blob | null; // Optional SWF blob, can be null if not decoded
   //   genres: string[];
