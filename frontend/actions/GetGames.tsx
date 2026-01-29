@@ -1,52 +1,55 @@
 'use server'
-import { json } from "stream/consumers";
 import { GameDetails } from "../types/GameDetails"
 import { Preferences } from "../types/Preferences";
+
 export async function getGames(): Promise<GameDetails[]> {
     const pref: Preferences = {
-        genre: ["action", "puzzle"],
-        playtime: [2, 3]
+        Total: 0,
+        Arcade: 0,
+        Action: 0,
+        Puzzle: 0,
+        Adventure: 0,
+        Sports: 0,
+        Dress_up_games: 0,
+        Driving: 0,
+        Slacking: 0,
+        Platformer: 0,
+        Simulation: 0
     };
-    console.log(JSON.stringify(pref));    
-    return fetch('http://localhost:8080/games/1', {
-            method: 'POST',
-            body: JSON.stringify(pref),
-        }
-    )
-    .then((response) => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then((data) => {
-        return data as GameDetails[];
-    })
-    .then((data) => {
-        return data.map((game: GameDetails) => {
-            if (game.file.length > 100) console.log("SWF BASE64");
-            const swfBlob = decodeBase64ToSWF(game.file);
-            if (swfBlob.length > 100) console.log("SWF BLOB");
-            return {
-                ...game, // Spread the existing game details
-                file: swfBlob, // Assign the decoded SWF blob
-            };
-        });
-    })
-    .catch((error) => {
-        console.error("Error fetching games:", error);
-        throw error; // Re-throw the error to be handled by the caller
-    });
-}
 
-const decodeBase64ToSWF = (base64: string, contentType: string = '', sliceSize: number = 512) => {
-    const byteCharacters = atob(base64);
-    const byteNumbers = new Array(byteCharacters.length);
-    for (let i = 0; i < byteCharacters.length; i++) {
-    byteNumbers[i] = byteCharacters.charCodeAt(i);
+    console.log(JSON.stringify(pref));
+
+    const listResp = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/${process.env.NEXT_PUBLIC_API_VERSION}/games`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(pref),
+    });
+
+    if (!listResp.ok) {
+        const text = await listResp.text().catch(() => undefined);
+        console.error('Failed to fetch game list:', listResp.status, text);
+        throw new Error('Network response was not ok');
     }
-    const byteArray = new Uint8Array(byteNumbers);
-    const blob = new Blob([byteArray], { type: "application/x-shockwave-flash" });
-    const objectUrl = URL.createObjectURL(blob);    
-    return objectUrl; // Return the object URL for the SWF file
+
+    const identifiers = (await listResp.json()) as string[];
+
+    const games = await Promise.all(identifiers.map(async (identifier) => {
+        const metaResp = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/v1/games/${identifier}`);
+        if (!metaResp.ok) {
+            console.error(`Failed to fetch metadata for ${identifier}:`, metaResp.status);
+            throw new Error(`Failed to fetch metadata for ${identifier}`);
+        }
+        const game_metadata = await metaResp.json();
+
+        const gameDetails: GameDetails = {
+            title: game_metadata?.metadata?.title ?? identifier,
+            description: game_metadata?.metadata?.description ?? `<p>Description for ${identifier}</p>`,
+            previewImage: `${process.env.NEXT_PUBLIC_API_URL}/v1/games/${identifier}/preview`,
+            file: `${process.env.NEXT_PUBLIC_API_URL}/v1/games/${identifier}/swf`,
+        };
+
+        return gameDetails;
+    }));
+
+    return games;
 }

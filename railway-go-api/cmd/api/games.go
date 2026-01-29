@@ -136,3 +136,43 @@ func (app *application) getGameSWFHandler(w http.ResponseWriter, r *http.Request
 	w.Header().Set("Content-Disposition", fmt.Sprintf("inline; filename=%q", filepath.Base(swfPath)))
 	http.ServeFile(w, r, swfPath)
 }
+
+// Preferences represents the incoming preference payload from the frontend
+type Preferences struct {
+	Total        int `json:"Total"`
+	Arcade       int `json:"Arcade"`
+	Action       int `json:"Action"`
+	Puzzle       int `json:"Puzzle"`
+	Adventure    int `json:"Adventure"`
+	Sports       int `json:"Sports"`
+	DressUpGames int `json:"Dress_up_games"`
+	Driving      int `json:"Driving"`
+	Slacking     int `json:"Slacking"`
+	Platformer   int `json:"Platformer"`
+	Simulation   int `json:"Simulation"`
+}
+
+// postGamesHandler accepts a POST with preferences and returns an array of game slugs.
+// For now it returns five duplicates of "2_billiards-2-play" as a placeholder.
+func (app *application) postGamesHandler(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
+	var pref Preferences
+	dec := json.NewDecoder(r.Body)
+	if err := dec.Decode(&pref); err != nil {
+		// If there's a decoding error, log and continue—use defaults.
+		// Responding with Bad Request is also reasonable, but frontend may send empty body.
+		// We'll log and continue to return the placeholder list.
+		fmt.Printf("Warning: failed to decode preferences: %v\n", err)
+	}
+
+	// Placeholder response: 5 copies of the same slug
+	result := make([]string, 5)
+	for i := range result {
+		result[i] = "2_billiards-2-play"
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	if err := json.NewEncoder(w).Encode(result); err != nil {
+		http.Error(w, "failed to encode response", http.StatusInternalServerError)
+		return
+	}
+}

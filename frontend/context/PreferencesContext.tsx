@@ -15,8 +15,17 @@ export default function PreferencesProvider({
   children: React.ReactNode;
 }) {
   const [preferences, setPreferences] = useState<Preferences>({
-    genre: ["All"],
-    playtime: [0],
+    Total: 0,
+    Arcade: 0,
+    Action: 0,
+    Puzzle: 0,
+    Adventure: 0,
+    Sports: 0,
+    Dress_up_games: 0,
+    Driving: 0,
+    Slacking: 0,
+    Platformer: 0,
+    Simulation: 0
   });
 
   return (

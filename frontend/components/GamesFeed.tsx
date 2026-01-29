@@ -9,7 +9,7 @@ import {
 import { GameDetails } from "../types/GameDetails";
 import GamePlayerContainer from "./GamePlayerContainer";
 // import GameCarouselItems from "./GameCarouselItems"
-// import { getGames } from "../actions/GetGames"
+import { getGames } from "../actions/GetGames"
 // import { GamePreferences } from "../types/GamePreferences"
 
 //make preferences object
@@ -44,6 +44,9 @@ const billiards_game: GameDetails = {
     // file: `https://api.cors.lol/?url=https://archive.org/download/homerun_20201126/homerun.swf`
 };
 
+// initialGames with GetGames.tsx
+
+const initialGames = await getGames();
 
 export default function GameFeed() {
 
@@ -55,12 +58,12 @@ export default function GameFeed() {
         <div className="game-feed">
             <Carousel>
                 <CarouselContent>
-                    {/* {initialGames.map((game: GameDetails, index: number) => (
+                    {initialGames.map((game: GameDetails, index: number) => (
                     <CarouselItem key={index}>
                         <GamePlayerContainer game={game} />
                     </CarouselItem>
-                    ))} */}
-                    {/* 10 instance of CarouselItem each containing GamePlayerContainer game={fetch(`${process.env.NEXT_PUBLIC_API_URL}/v1/games/2_billiards-2-play/swf`)}*/}
+                    ))}
+                    {/* 
                     <CarouselItem key ={1}>
                         <GamePlayerContainer game={billiards_game} />
                     </CarouselItem>
@@ -73,6 +76,7 @@ export default function GameFeed() {
                     <CarouselItem key ={4}>
                         <GamePlayerContainer game={billiards_game} />
                     </CarouselItem>
+                    */}
                 </CarouselContent>
             </Carousel>
         </div>

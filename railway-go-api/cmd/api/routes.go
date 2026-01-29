@@ -12,6 +12,7 @@ func (app *application) routes() *httprouter.Router {
 
 	router.HandlerFunc(http.MethodGet, "/v1/healthcheck", app.healthcheckHandler)
 	router.GET("/v1/games", withCORSRouter(app.listGamesHandler))
+	router.POST("/v1/games", withCORSRouter(app.postGamesHandler))
 	router.GET("/v1/games/:slug", withCORSRouter(app.getGameMetadataHandler))
 	router.GET("/v1/games/:slug/preview", withCORSRouter(app.getGamePreviewHandler))
 	router.GET("/v1/games/:slug/swf", withCORSRouter(app.getGameSWFHandler))
