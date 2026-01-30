@@ -165,7 +165,7 @@ func (app *application) postGamesHandler(w http.ResponseWriter, r *http.Request,
 	}
 
 	// Placeholder response: 5 copies of the same slug
-	result := make([]string, 5)
+	result := make([]string, 3)
 	for i := range result {
 		result[i] = "2_billiards-2-play"
 	}
