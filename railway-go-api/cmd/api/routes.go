@@ -47,7 +47,8 @@ func withCORSRouter(next httprouter.Handle) httprouter.Handle {
 				strings.HasPrefix(origin, "http://127.0.0.1") ||
 				strings.HasPrefix(origin, "https://127.0.0.1") ||
 				strings.Contains(origin, "railway.app") ||
-				strings.Contains(origin, "vercel.app") {
+				strings.Contains(origin, "vercel.app") ||
+				strings.Contains(origin, "vercel.live") {
 				w.Header().Set("Access-Control-Allow-Origin", origin)
 				w.Header().Set("Vary", "Origin")
 				w.Header().Set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
@@ -59,6 +60,7 @@ func withCORSRouter(next httprouter.Handle) httprouter.Handle {
 			w.WriteHeader(http.StatusNoContent)
 			return
 		}
+		print("Handling CORS\n")
 		next(w, r, params)
 	}
 }
